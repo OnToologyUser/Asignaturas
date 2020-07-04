@@ -1,0 +1,324 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/eontech64/Asignaturas/blob/master/Asignaturas"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/eontech64/Asignaturas/blob/master/Asignaturas">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://opendata.unex.es/def/ontouniversidad#</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Esta ontología es una referencia para establecer las relaciones entre los estudiantes y las asignaturas, con el fin de poder determinar que competencias y objetivos de aprendizaje a alcanzado el alumno durante su cursado.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Alumno"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esAsignaturaDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esCoordinadorDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esDocenteDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esTitulacionDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estáInscriptoA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#seImparteEn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Asignaturas_previas"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Competencias"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Créditos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Curso"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Código"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DNI"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Horario"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Idioma"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#N_expediente"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#N_orden"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Nombre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Obj._Aprend."/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Objetivos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Oficina"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Plan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Plan_de_Estudios"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Recursos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Semestre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Tipo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Tipo_estudio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#web"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daniel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MUIA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ontologías"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oscar"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Alumno"/>
+        <Class IRI="http://opendata.unex.es/def/ontouniversidad#Persona"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://opendata.unex.es/def/ontouniversidad#PDI"/>
+        <Class IRI="#Alumno"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Alumno"/>
+        <NamedIndividual IRI="#Daniel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://opendata.unex.es/def/ontouniversidad#Centro"/>
+        <NamedIndividual IRI="#FI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://opendata.unex.es/def/ontouniversidad#Titulacion"/>
+        <NamedIndividual IRI="#MUIA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://opendata.unex.es/def/ontouniversidad#Asignatura"/>
+        <NamedIndividual IRI="#Ontologías"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://opendata.unex.es/def/ontouniversidad#PDI"/>
+        <NamedIndividual IRI="#Oscar"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estáInscriptoA"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <NamedIndividual IRI="#MUIA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estáInscriptoA"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <NamedIndividual IRI="#Ontologías"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esTitulacionDe"/>
+        <NamedIndividual IRI="#MUIA"/>
+        <NamedIndividual IRI="#Ontologías"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seImparteEn"/>
+        <NamedIndividual IRI="#MUIA"/>
+        <NamedIndividual IRI="#FI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esAsignaturaDe"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <NamedIndividual IRI="#MUIA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seImparteEn"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <NamedIndividual IRI="#FI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esCoordinadorDe"/>
+        <NamedIndividual IRI="#Oscar"/>
+        <NamedIndividual IRI="#Ontologías"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esDocenteDe"/>
+        <NamedIndividual IRI="#Oscar"/>
+        <NamedIndividual IRI="#Ontologías"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DNI"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <Literal>Y7535902N</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#N_expediente"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <Literal>19A054</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#N_orden"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <Literal>725</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <Literal>Daniel Rodriguez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Plan"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <Literal>10AJ</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tipo_estudio"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <Literal>PSC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre"/>
+        <NamedIndividual IRI="#FI"/>
+        <Literal>Escuela Tecnica Superior de Ingenieros Informaticos (10)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Créditos"/>
+        <NamedIndividual IRI="#MUIA"/>
+        <Literal>60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Código"/>
+        <NamedIndividual IRI="#MUIA"/>
+        <Literal>10AJ</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre"/>
+        <NamedIndividual IRI="#MUIA"/>
+        <Literal>Master Universitario en Inteligencia Artificial</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#web"/>
+        <NamedIndividual IRI="#MUIA"/>
+        <Literal>http://www.dia.fi.upm.es/masteria/?q=es/MUIA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Competencias"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal>CB10, CEIA1, CEIA10, CEIA2, CEIA7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Créditos"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal>5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Curso"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal>2019/20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Idioma"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal>Inglés</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal>Ontological Engineering</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Obj._Aprend."/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal>RA60,RA64,RA59,RA62,RA63,RA61</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Plan_de_Estudios"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal>10AJ</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Recursos"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal>https://moodle.upm.es/titulaciones/oficiales/course/view.php?id=6730</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Semestre"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal>Semester 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tipo"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal>Opcional</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#Oscar"/>
+        <Literal xml:lang="upm.es">oscar.corcho</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Horario"/>
+        <NamedIndividual IRI="#Oscar"/>
+        <Literal>Tu - 10:00 - 20:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Oficina"/>
+        <NamedIndividual IRI="#Oscar"/>
+        <Literal>2209</Literal>
+    </DataPropertyAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Alumno</IRI>
+        <Literal xml:lang="es">Alumno matriculado en la Universidad</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Alumno</IRI>
+        <Literal xml:lang="es">Alumno</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
